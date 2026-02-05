@@ -125,9 +125,4 @@ complete -C /usr/bin/tofu tofu
 export LD_LIBRARY_PATH=/usr/local/dp-oracle/instantclient_21_9:$LD_LIBRARY_PATH
 
 source '/home/gitpod/.bash_completions/dope.sh'
-# fzf installation and setup
-if [ ! -d "$HOME/.fzf" ]; then
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install --all --no-bash --no-zsh --no-fish
-fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
